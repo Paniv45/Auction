@@ -1,9 +1,18 @@
 /* General */
 body {
     margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
     color: #333;
+
+    background: radial-gradient(
+        circle,
+        white 45%,
+        hsl(250, 50%, 70%),
+        hsl(310, 70%, 70%),
+        white 90%
+    );
 }
 
 /* Navbar */
@@ -46,7 +55,6 @@ body {
     position: relative;
     text-align: center;
     padding: 2rem;
-    background: #fff;
 }
 
 .hero-image {
@@ -89,7 +97,6 @@ body {
 /* Section 2 */
 .section2 {
     padding: 2rem;
-    background: #f0f0f0;
     text-align: center;
 }
 
@@ -112,7 +119,7 @@ body {
 /* Section 3 */
 .section3 {
     padding: 3rem 2rem;
-    background: #fff;
+    background: #fafafa;
     text-align: center;
 }
 
