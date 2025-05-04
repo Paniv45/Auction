@@ -5,89 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Live Shopping Marketplace</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">  <!-- ✅ External CSS linked -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
 </head>
 
 <body>
 
-  <!-- Logo -->
   <div style="text-align: center; padding: 20px;">
-    <img src="https://placehold.co/80" alt="BidZy Logo" style="height: 80px;"> Bidzy
+    <div class="company-name">Bid<span style="color: #9b5de5;">Zy</span></div>
   </div>
 
-  <!-- Section 1 -->
   <section class="section1" id="section1">
-    <img src="https://try.commentsold.com/wp-content/uploads/2022/08/blog_hero_ig_launch.png" alt="Live Shopping" class="hero-image">
+    <!-- Left Side: Mobile Mockup Image -->
+    <img src="assets/images/live-shopping-mockup.png" alt="Live Shopping" class="hero-image" />
+  
+    <!-- Right Side: Text Content -->
     <div class="section1-content">
-      <h1>The Live Shopping Marketplace</h1>
-      <p><em>Where deals go live</em></p>
+      <h1><strong>Your Live Shopping<br>Marketplace</strong></h1>
+      <p>Where Deals Come to Life</p>
       <a href="https://www.instagram.com/bidzy.live" target="_blank" class="btn">Catch it Live</a>
-      <p class="small-text">Bringing live bidding experience at your fingertips</p>
+      
+      <!-- QR Code -->
+      <img src="assets/images/qr-code.png" alt="QR Code" class="qr" />
     </div>
   </section>
 
-  <!-- Section 2 -->
   <section class="section2" id="section2">
-    <video src="./Assets/Auction.mp4" autoplay muted loop playsinline oncontextmenu="return false"></video>
-    <div class="section2-content">
-      <h2>Join In the Fun</h2>
-      <p><em>Take part in fast-paced auctions starting at ₹10/- across 10+ categories</em></p>
+    <div class="section2-container">
+      <div class="section2-text">
+        <h2><em>Watch deals<br>Go live</em></h2>
+        <p>Compete in fast-paced auctions<br>starting at ₹10</p>
+        <button class="get-started-btn">Get Started</button>
+      </div>
+      <div class="section2-video">
+        <video src="./Assets/Auction.mp4" autoplay muted loop playsinline oncontextmenu="return false" poster="./Assets/placeholder.jpg"></video>
+      </div>
     </div>
   </section>
 
-  <!-- Section 3 -->
   <section class="section3" id="section3">
-    <h2>How It Works</h2>
+    <h2>How it works?</h2>
     <div class="steps">
       <div class="step">
-        <img src="https://placehold.co/150" alt="Join Live Auction" class="step-image">
-        <h3>1. Join the Live Auction</h3>
-        <p>Participate in our live auction events on Instagram.</p>
+        <img src="path-to-image1.jpg" alt="Join Live Auction" class="step-image">
+        <h3>Join the Live Auction</h3>
+        <p>Participate in our live auctions on Instagram.</p>
       </div>
       <div class="step">
-        <img src="https://placehold.co/150" alt="Place Your Bids" class="step-image">
-        <h3>2. Place Your Bids</h3>
-        <p>Submit your bids in the chat section—highest bidder wins the item.</p>
+        <img src="path-to-image2.jpg" alt="Place Your Bids" class="step-image">
+        <h3>Place Your Bids</h3>
+        <p>Submit your bids in the chat — highest bidder wins.</p>
       </div>
       <div class="step">
-        <img src="https://placehold.co/150" alt="Secure Your Win" class="step-image">
-        <h3>3. Secure Your Win</h3>
-        <p>Complete your payment via QR code sent through direct message.</p>
+        <img src="path-to-image3.jpg" alt="Secure Your Win" class="step-image">
+        <h3>Secure Your Win</h3>
+        <p>Complete your payment via QR code sent in your DM.</p>
       </div>
       <div class="step">
-        <img src="https://placehold.co/150" alt="Fast Shipping" class="step-image">
-        <h3>4. Fast Shipping</h3>
-        <p>Your order will be processed and shipped within 48 hours.</p>
+        <img src="path-to-image4.jpg" alt="Won → Shipped" class="step-image">
+        <h3>Won → Shipped</h3>
+        <p>Your order will be on the move within 48 hours.</p>
       </div>
     </div>
+    <p class="tagline">No rules. No limits. Just pay what feels good</p>
   </section>
 
-  <!-- Section 4 -->
   <section class="section4" id="section4">
-    <div class="overlay-text">
-      <h2>Where shopping hits different.</h2>
-      <p>xxxx</p>
+    <div class="collage-container">
+      <!-- 👈 Mockup on the left -->
+      <div class="mockup-image">
+        <img src="./Assets/57a75ba9-b88e-47dd-9132-0eabba65ab21.png" alt="Phone Mockup with Cards">
+      </div>
+
+      <!-- 👉 Text on the right -->
+      <div class="mockup-text">
+        <h1><span class="bold">Bids in motion</span><br><span class="bold">Deals in action</span></h1>
+        <p>
+          Take part in fast-paced auctions, incredible flash sales, live show giveaways, and so much more.<br><br>
+          <strong>Action Starts Now</strong>
+        </p>
+        <img src="./Assets/qr.png" alt="QR Code" class="qr-code" />
+      </div>
     </div>
-    <div class="collage"></div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="top">
-      <div class="company-name">Bidzy</div>
+      <div class="company-name">Bid<span style="color: #9b5de5;">Zy</span></div>
       <div class="contact">
-        <div style="margin-bottom: 10px; font-weight: bold; font-size: 20px;">Contact Us</div>
+        <h3>Sign up as a seller</h3>
+        <p>+91-9871340982<br>contact@bidzy.live</p>
+        <br>
+
         <a href="https://wa.me/919871340982" target="_blank">
           <img src="./Assets/wa-flaticon.png" alt="WhatsApp">
         </a>
         <a href="https://www.instagram.com/bidzy.live" target="_blank">
           <img src="./Assets/ig-flaticon.png" alt="Instagram">
         </a>
+        <a href="mailto:contact@bidzy.live" target="_blank">
+          <img src="./Assets/email-flaticon.png" alt="Email">
+        </a>
       </div>
     </div>
-    <div class="bottom">
-      © 2025 Bidzy. All rights reserved.
-    </div>
+    <div class="bottom">© 2025 Bidzy. All rights reserved.</div>
   </footer>
 
 </body>
