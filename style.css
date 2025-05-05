@@ -41,7 +41,6 @@ body {
   background-color: #7a6bff;
   color: white;
   font-size: 1rem;
-  /* box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.2); */
 }
 
 .get-started-btn:hover {
@@ -54,17 +53,15 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-
-  min-height: 80vh;
-
   padding: 2rem 80px;
   background: linear-gradient(to bottom, #f9f6ff, #eae2f9);
+  min-height: 80vh;
+  text-align: center;
 }
 
 .hero-image {
   width: 30rem;
   min-width: 25rem;
-
   object-fit: cover;
   border-radius: 10px;
 }
@@ -72,6 +69,7 @@ body {
 .section1-content {
   flex: 1;
   max-width: 500px;
+  margin-top: 30px;
 }
 
 .section1-content h1 {
@@ -87,12 +85,7 @@ body {
 
 .qr {
   height: 280px;
-}
-
-.small-text {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #666;
+  margin-top: 20px;
 }
 
 /* SECTION 2 */
@@ -121,13 +114,11 @@ body {
 .section2-text h2 {
   font-size: 2.2rem;
   font-weight: bold;
-  color: #000;
   margin-bottom: 10px;
 }
 
 .section2-text p {
   font-size: 1.1rem;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -147,224 +138,148 @@ body {
 }
 
 .section3 h2 {
-  font-size: 2em;
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
 .steps {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
-
 .step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 300px;
   background-color: white;
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  max-width: 260px;
+  text-align: center;
   transition: transform 0.3s ease;
-
-  & img {
-    height: 400px;
-    min-width: 100%;
-
-    object-fit: cover;
-    object-position: center;
-
-    border-radius: 16px;
-  }
-
 }
 
 .step:hover {
   transform: translateY(-5px);
 }
 
-.step-image {
+.step img {
   width: 100%;
-  max-width: 200px;
-  height: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
-.text-content h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2em;
+.step h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
   color: #333;
 }
 
-.text-content p {
-  font-size: 0.95em;
+.step p {
+  font-size: 0.95rem;
   color: #555;
 }
 
 .tagline {
+  font-size: 1.1rem;
   margin-top: 40px;
-  font-style: italic;
-  font-size: 1.1em;
+  font-weight: bold;
   color: #777;
 }
 
 /* SECTION 4 */
 .section4 {
   padding: 60px 20px;
-  background: linear-gradient(to bottom, #f5f2ff, #e3def8);
+  background: linear-gradient(to bottom, #f0ecff, #ffffff);
 }
 
 .collage-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-}
-
-.mockup-image {
-  flex: 1;
-  min-width: 300px;
-  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .mockup-image img {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .mockup-text {
-  flex: 1;
-  min-width: 280px;
   max-width: 500px;
-  padding: 20px;
-  color: #111;
+  text-align: left;
 }
 
 .mockup-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
 .mockup-text .bold {
-  font-weight: 700;
+  font-weight: bold;
+  color: #7a6bff;
 }
 
 .mockup-text p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: #333;
-  margin-bottom: 20px;
-}
-
-.qr-code {
-  width: 120px;
-  height: auto;
+  line-height: 1.6;
 }
 
 /* FOOTER */
 footer {
-  background: #f8f6ff;
+  background-color: #2b2b2b;
+  color: white;
   padding: 40px 20px 20px;
-  font-family: sans-serif;
-  color: #333;
+  text-align: center;
 }
 
 footer .top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
 }
 
 footer .company-name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
-footer .seller-info,
-footer .contact {
-  min-width: 200px;
+footer .contact h3 {
+  margin-bottom: 10px;
+}
+
+footer .contact p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
 }
 
 footer .contact img {
   width: 30px;
   margin-right: 10px;
+  transition: transform 0.2s ease;
 }
 
-footer h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-/* Styling for the Email icon to match WhatsApp and Instagram icons */
-footer .contact a img {
-  width: 30px; /* Set icon size */
-  margin-right: 10px; /* Space between icons */
+footer .contact img:hover {
+  transform: scale(1.1);
 }
 
 footer .bottom {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
-  border-top: 1px solid #ccc;
-  padding-top: 10px;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  border-top: 1px solid #444;
+  padding-top: 15px;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 768px) {
-  .section2-container,
-  .collage-container {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .section2-text,
-  .section2-video {
-    padding: 10px 20px;
-  }
-
-  .section2-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .section2-text p {
-    font-size: 1rem;
-  }
-
-  .get-started-btn {
-    margin-top: 15px;
-  }
-
-  .section2-video video {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .steps {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .step {
-    width: 90%;
-  }
-
-  .mockup-text h1 {
-    font-size: 2rem;
-  }
-
-  footer .top {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
-}
