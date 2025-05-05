@@ -1,5 +1,12 @@
+/* BREAKPOINTS */
+/* 1040px */
+/* 720px */
+
+
 /* CSS RESET */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,6 +53,8 @@ body {
 .get-started-btn:hover {
   background-color: #5d4ee6;
 }
+
+
 
 /* SECTION 1 */
 .section1 {
@@ -124,8 +133,8 @@ body {
 
 .section2-video video {
   width: 100%;
-  max-width: 550px;
-  border-radius: 15px;
+  max-width: 560px;
+  border-radius: 16px;
   object-fit: cover;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
 }
@@ -154,9 +163,11 @@ body {
   border-radius: 16px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  max-width: 260px;
+  max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease;
+
+  border: 2px solid gray;
 }
 
 .step:hover {
@@ -165,7 +176,7 @@ body {
 
 .step img {
   width: 100%;
-  height: 200px;
+  height: 380px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 15px;
