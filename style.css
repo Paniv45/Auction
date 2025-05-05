@@ -5,11 +5,12 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
   min-height: 100vh;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
 }
 
@@ -50,18 +51,21 @@ html, body {
 /* SECTION 1 */
 .section1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 60px 80px;
+
+  min-height: 80vh;
+
+  padding: 2rem 80px;
   background: linear-gradient(to bottom, #f9f6ff, #eae2f9);
 }
 
 .hero-image {
-  width: 45%;
-  max-width: 500px;
-  height: auto;
+  width: 30rem;
+  min-width: 25rem;
+
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -82,8 +86,7 @@ html, body {
 }
 
 .qr {
-  width: 120px;
-  height: auto;
+  height: 280px;
 }
 
 .small-text {
@@ -151,20 +154,11 @@ html, body {
 .steps {
   display: flex;
   /* flex-wrap: wrap; */
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   gap: 30px;
 }
 
-/* Add a new media query for desktop to ensure all images come in one row */
-@media (min-width: 1024px) {
-  .steps {
-    justify-content: space-between; /* Distribute images evenly */
-  }
-
-  .step {
-    width: 23%; /* Adjust the width for larger screens */
-  }
-}
 
 .step {
   display: flex;
@@ -177,6 +171,17 @@ html, body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease;
+
+  & img {
+    height: 400px;
+    min-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 16px;
+  }
+
 }
 
 .step:hover {
@@ -312,7 +317,6 @@ footer .bottom {
   border-top: 1px solid #ccc;
   padding-top: 10px;
 }
-
 
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
