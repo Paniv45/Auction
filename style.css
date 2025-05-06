@@ -329,7 +329,6 @@ header img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -343,20 +342,20 @@ header img {
   text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
-.mockup-right h1 {
+.mockup-text h1 {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
-.mockup-right .bold {
+.mockup-text .bold {
   font-weight: bold;
   color: #7a6bff;
 }
 
-.mockup-right p {
+.mockup-text p {
   font-size: 1.05rem;
   color: #333;
   line-height: 1.6;
