@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Live Shopping Marketplace</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
-    rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap"
+    rel="stylesheet" /> -->
   <link rel="stylesheet" href="style.css" />
+
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -46,8 +47,13 @@
 
 
     <div class="scroll-navigator">
-      <button><img src="./Assets/down-arrow.svg" alt="Scroll down to next section"></button>
-      <button><img src="./Assets/up-arrow.svg" alt="Scroll up to previous section"></button>
+      <button onclick="scrollToSection('section2')">
+        <img src="./Assets/down-arrow.svg" alt="Scroll down to next section">
+      </button>
+
+      <!-- <button>
+        <img src="./Assets/up-arrow.svg" alt="Scroll up to previous section">
+      </button> -->
     </div>
 
     <!-- Overlay Image -->
@@ -72,8 +78,13 @@
     </div>
 
     <div class="scroll-navigator">
-      <button><img src="./Assets/down-arrow.svg" alt="Scroll down to next section"></button>
-      <button><img src="./Assets/up-arrow.svg" alt="Scroll up to previous section"></button>
+      <button onclick="scrollToSection('section3')">
+        <img src="./Assets/down-arrow.svg" alt="Scroll down to next section">
+      </button>
+
+      <button onclick="scrollToSection('section1')">
+        <img src="./Assets/up-arrow.svg" alt="Scroll up to previous section">
+      </button>
     </div>
   </section>
 
@@ -113,8 +124,12 @@
     </div>
 
     <div class="scroll-navigator">
-      <button><img src="./Assets/down-arrow.svg" alt="Scroll down to next section"></button>
-      <button><img src="./Assets/up-arrow.svg" alt="Scroll up to previous section"></button>
+      <button onclick="scrollToSection('section4')">
+        <img src="./Assets/down-arrow.svg" alt="Scroll down to next section">
+      </button>
+      <button onclick="scrollToSection('section2')">
+        <img src="./Assets/up-arrow.svg" alt="Scroll up to previous section">
+      </button>
     </div>
 
   </section>
@@ -147,7 +162,9 @@
     </div>
 
     <div class="scroll-navigator">
-      <button><img src="./Assets/up-arrow.svg" alt="Scroll up to previous section"></button>
+      <button onclick="scrollToSection('section3')">
+        <img src="./Assets/up-arrow.svg" alt="Scroll up to previous section">
+      </button>
     </div>
 
   </section>

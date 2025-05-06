@@ -186,11 +186,10 @@ header img {
 
 .section2-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 
   gap: 30px;
-
   width: 100%;
 }
 
@@ -248,13 +247,12 @@ header img {
 
 /* SECTION 3 */
 .section3 {
-  padding: 40px 20px;
+  padding: 2rem;
   text-align: center;
-  /* background-color: #f9f9f9; */
   background: linear-gradient(to bottom,#ffffff,#f0ecff);
 }
 
-.section2-container {
+.section3-container {
   display: flex;
   align-items: center;
   justify-content: center;
