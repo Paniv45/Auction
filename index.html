@@ -15,14 +15,14 @@
 <body>
 
   <!-- Header -->
-  <header>
+  <header id="page-header">
     <img src="./Assets/Logo2.png" alt="bidzy logo" />
   </header>
 
   <!-- Section 1 -->
   <section class="section1" id="section1">
 
-    <div class="section1-content-container">
+    <div class="section1-container">
       <!-- Left Side: Mobile Mockup Image -->
       <img src="./Assets/hero-mobile-mockup.webp" alt="Live Shopping" class="hero-image" />
 
@@ -31,18 +31,17 @@
         <h1>
           <strong>Your Live Shopping<br />Marketplace</strong>
         </h1>
+
         <p>Where Deals Come to Life</p>
 
-        <div>
-          Catch it Live
-          <!-- <a href="https://www.instagram.com/bidzy.live" target="_blank" class="btn catch-live-btn">Catch it Live</a> -->
-        </div>
-        <!-- QR Code -->
-        <!-- <div> -->
-        <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
-        <!-- </div> -->
+        <!-- TODO: NOT a button on desktop devices -->
+        <!-- TODO: Make it button on mobile devices -->
+        <a href="https://www.instagram.com/bidzy.live" target="_blank" class="btn catch-live-btn">Catch it Live</a>
 
+        <!-- QR Code -->
+        <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
       </div>
+
     </div>
 
 
@@ -57,13 +56,15 @@
     </div>
 
     <!-- Overlay Image -->
-    <img src="./Assets/s1br.webp" alt="overlay image" class="s1-overlay" />
+    <img src="./Assets/s1-overlay.webp" alt="overlay image" class="overlay" />
+
   </section>
 
   <!-- Section 2 -->
   <section class="section2" id="section2">
     <div class="section2-container">
-      <div class="section2-text">
+
+      <div class="section2-content">
         <h2>
           <em>Watch deals<br />Go live</em>
         </h2>
@@ -71,10 +72,9 @@
         <button class="get-started-btn">Get Started</button>
       </div>
 
-      <div class="section2-video">
-        <video src="./Assets/product-showcase-HEVC-high-720p.mp4" autoplay muted loop playsinline
-          oncontextmenu="return false"></video>
-      </div>
+      <video class="section2-video" src="./Assets/product-showcase-HEVC-high-640p.mp4" autoplay muted loop playsinline
+        oncontextmenu="return false"></video>
+
     </div>
 
     <div class="scroll-navigator">
@@ -136,12 +136,10 @@
 
   <!-- Section 4 -->
   <section class="section4" id="section4">
-    <div class="collage-container">
-      <div class="mockup-image">
-        <img src="./Assets/s4-mobile-mockup.webp" alt="Phone Mockup with Cards" />
-      </div>
+    <div class="section4-container">
+      <img src="./Assets/s4-mobile-mockup.webp" alt="Phone Mockup with Cards" class="section4-image" />
 
-      <div class="mockup-text">
+      <div class="section4-content">
 
         <h1>
           <span class="bold">Bids in motion</span><br />
@@ -167,36 +165,38 @@
       </button>
     </div>
 
+    <!-- Overlay Image -->
+    <img src="./Assets/s4-overlay.webp" alt="overlay image" class="overlay" />
+
   </section>
 
   <!-- Footer -->
   <footer>
-    <div class="top">
-      <div class="company-name">
+    <div class="footer-content">
+      <img src="./Assets/Logo2.png" alt="bidzy logo" class="footer-company-logo" />
 
-        <img src="./Assets/Logo2.png" alt="bidzy logo" />
-      </div>
-
-      <div class="contact">
+      <div class="footer-contact">
         <h3>Sign up as a seller</h3>
         <p>+91-9871340982<br />contact@bidzy.live</p>
         <br />
 
-        <a href="https://wa.me/919871340982" target="_blank">
-          <img src="./Assets/wa-flaticon.png" alt="WhatsApp" />
-        </a>
+        <div class="social-media-icons">
+          <a href="https://wa.me/919871340982" target="_blank">
+            <img src="./Assets/wa-flaticon.png" alt="WhatsApp" />
+          </a>
 
+          <a href="mailto:contact@bidzy.live" target="_blank">
+            <img src="./Assets/mail-flaticon.png" alt="Email" />
+          </a>
 
-        <a href="mailto:contact@bidzy.live" target="_blank">
-          <img src="./Assets/mail-flaticon.png" alt="Email" />
-        </a>
-
-        <a href="https://www.instagram.com/bidzy.live" target="_blank">
-          <img src="./Assets/ig-flaticon.png" alt="Instagram" />
-        </a>
+          <a href="https://www.instagram.com/bidzy.live" target="_blank">
+            <img src="./Assets/ig-flaticon.png" alt="Instagram" />
+          </a>
+        </div>
 
       </div>
     </div>
+
     <div class="bottom">&copy; 2025 Bidzy. All rights reserved.</div>
   </footer>
 </body>
