@@ -249,7 +249,7 @@ header img {
 .section3 {
   padding: 2rem;
   text-align: center;
-  background: linear-gradient(to bottom,#ffffff,#f0ecff);
+  /* background: linear-gradient(to bottom,#ffffff,#f0ecff); */
 }
 
 .section3-container {
@@ -319,7 +319,7 @@ header img {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background: linear-gradient(to bottom, #f0ecff, #ffffff);
+  /* background: linear-gradient(to bottom, #f0ecff, #ffffff); */
 }
 
 .collage-container {
@@ -328,6 +328,8 @@ header img {
   align-items: center;
   gap: 30px;
   width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 
@@ -359,6 +361,7 @@ header img {
   line-height: 1.6;
   max-width: 40ch;
 }
+
 
 /* FOOTER */
 footer {
