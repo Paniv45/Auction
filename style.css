@@ -14,12 +14,14 @@ body {
   font-family: "Poppins", sans-serif;
   color: #333;
 
-  background: radial-gradient(circle at bottom,
-      white 60%,
-      hsl(250, 50%, 80%) 70%,
-      hsl(280, 50%, 80%) 80%,
-      hsl(310, 50%, 80%) 85%,
-      white 95%);
+  background: radial-gradient(
+    circle at bottom,
+    white 60%,
+    hsl(250, 50%, 80%) 70%,
+    hsl(280, 50%, 80%) 80%,
+    hsl(310, 50%, 80%) 85%,
+    white 95%
+  );
 }
 
 /* GLOBAL BUTTONS */
@@ -34,7 +36,7 @@ body {
 }
 
 .get-started-btn {
-  background-color: #8581A9;
+  background-color: #8581a9;
   color: white;
   font-size: 1rem;
 }
@@ -46,15 +48,14 @@ body {
 .catch-live-btn {
   margin-bottom: 20px;
 
-  font-weight: inherit;  /* same weight as surrounding text */
-  text-decoration: none; /* no underline */
+  font-weight: inherit;
+  text-decoration: none;
 
-  color: inherit;        /* no color change */
+  color: inherit;
 
-  cursor: default;       /* no pointer cursor */
+  cursor: default;
   pointer-events: none;
 }
-
 
 /* HEADER */
 header {
@@ -67,9 +68,7 @@ header {
   & img {
     width: 160px;
   }
-
 }
-
 
 .scroll-navigator {
   display: flex;
@@ -83,7 +82,7 @@ header {
   & button {
     aspect-ratio: 1;
     width: 3rem;
-    padding: .5rem;
+    padding: 0.5rem;
 
     background-color: hsla(0, 0%, 60%, 0.5);
 
@@ -103,7 +102,6 @@ header {
     background-color: hsla(260, 40%, 70%, 0.9);
     transform: scale(1.1);
   }
-
 }
 
 /* SECTION 1 */
@@ -156,7 +154,6 @@ header {
   }
 }
 
-
 .qr {
   width: 150px;
   margin-top: 10px;
@@ -179,7 +176,6 @@ header {
   gap: 30px;
   width: 100%;
 }
-
 
 .section2-content {
   display: flex;
@@ -206,7 +202,6 @@ header {
   object-fit: cover;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 /* SECTION 3 */
 .section3 {
@@ -300,11 +295,9 @@ header {
   width: 100%;
 }
 
-
 .section4-image {
-  max-width: 300px;
+  max-width: 350px;
   object-fit: cover;
- 
 }
 
 .section4-content {
@@ -406,7 +399,6 @@ footer {
   }
 }
 
-
 .overlay {
   position: absolute;
   right: 0;
@@ -424,7 +416,6 @@ footer {
 
 /* Tablet devices */
 @media (max-width: 1080px) and (min-width: 852px) {
-
   .hero-image {
     max-width: 440px;
   }
@@ -435,7 +426,6 @@ footer {
   }
 
   .section1-content {
-
     & h1 {
       font-size: 2rem;
     }
@@ -458,7 +448,6 @@ footer {
   .section2-video video {
     max-width: 450px;
   }
-
 }
 
 /* Mobile devices */
@@ -481,14 +470,12 @@ footer {
 
   .section2-container {
     flex-direction: column;
-    /* Stacks the video and text vertically */
   }
 
   .section2-content {
-    order: 2;
     /* Moves the text below the video */
+    order: 2;
     padding-top: 20px;
-    /* Adds spacing between the video and the text */
 
     text-align: center;
     align-items: center;
@@ -506,10 +493,9 @@ footer {
   }
 
   .section2-video {
-    order: 1;
     /* Keeps the video at the top */
+    order: 1;
   }
-
 
   .section4-container {
     flex-direction: column;
@@ -534,5 +520,9 @@ footer {
 
   .footer-company-logo {
     max-width: 120px;
+  }
+
+  .section4-image {
+    max-width: 300px;
   }
 }
