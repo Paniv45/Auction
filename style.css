@@ -129,7 +129,7 @@ header {
 
 .hero-image {
   width: 480px;
-  min-width: 25rem;
+  min-width: 22rem;
   object-fit: cover;
 }
 
@@ -302,8 +302,9 @@ header {
 
 
 .section4-image {
-  max-width: 350px;
+  max-width: 300px;
   object-fit: cover;
+ 
 }
 
 .section4-content {
