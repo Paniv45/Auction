@@ -57,239 +57,250 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
-
   </head>
 
   <body>
-    <!-- Header -->
-    <header id="page-header">
-      <img src="./Assets/Logo2.png" alt="bidzy logo" />
-    </header>
+    <div class="head">
+      <!-- Header -->
+      <header id="page-header">
+        <img src="./Assets/Logo2.png" alt="bidzy logo" />
+      </header>
+    </div>
 
-    <!-- Section 1 -->
-    <section class="section1" id="section1">
-      <div class="section1-container">
-        <!-- Left Side: Mobile Mockup Image -->
-        <img
-          src="./Assets/hero-mobile-mockup.webp"
-          alt="Live Shopping"
-          class="hero-image"
-        />
-
-        <!-- Right Side: Text Content -->
-        <div class="section1-content">
-          <h1>
-            <strong>Your Live Shopping<br />Marketplace</strong>
-          </h1>
-
-          <p>Where Deals Come to Life</p>
-
-          <!-- TODO: NOT a button on desktop devices -->
-          <!-- TODO: Make it button on mobile devices -->
-          <a
-            href="https://www.instagram.com/bidzy.live"
-            target="_blank"
-            class="btn catch-live-btn"
-            >Catch it Live</a
-          >
-
-          <!-- QR Code -->
-          <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
-        </div>
-      </div>
-
-      <div class="scroll-navigator">
-        <button onclick="scrollToSection('section2')">
+    <div class="content">
+      <!-- Section 1 -->
+      <section class="section1" id="section1">
+        <div class="section1-container">
+          <!-- Left Side: Mobile Mockup Image -->
           <img
-            src="./Assets/down-arrow.svg"
-            alt="Scroll down to next section"
+            src="./Assets/hero-mobile-mockup.webp"
+            alt="Live Shopping"
+            class="hero-image"
           />
-        </button>
 
-        <!-- <button>
+          <!-- Right Side: Text Content -->
+          <div class="section1-content">
+            <h1>
+              <strong>Your Live Shopping<br />Marketplace</strong>
+            </h1>
+
+            <p>Where Deals Come to Life</p>
+
+            <!-- TODO: NOT a button on desktop devices -->
+            <!-- TODO: Make it button on mobile devices -->
+            <a
+              href="https://www.instagram.com/bidzy.live"
+              target="_blank"
+              class="btn catch-live-btn"
+              >Catch it Live</a
+            >
+
+            <!-- QR Code -->
+            <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
+          </div>
+        </div>
+
+        <div class="scroll-navigator">
+          <button onclick="scrollToSection('section2')">
+            <img
+              src="./Assets/down-arrow.svg"
+              alt="Scroll down to next section"
+            />
+          </button>
+
+          <!-- <button>
         <img src="./Assets/up-arrow.svg" alt="Scroll up to previous section">
       </button> -->
-      </div>
-
-      <!-- Overlay Image -->
-      <img src="./Assets/s1-overlay.webp" alt="overlay image" class="overlay" />
-    </section>
-
-    <!-- Section 2 -->
-    <section class="section2" id="section2">
-      <div class="section2-container">
-        <div class="section2-content">
-          <h2>
-            <em>Watch deals<br />Go live</em>
-          </h2>
-          <p>Compete in fast-paced auctions<br />starting at ₹10</p>
-          <button class="get-started-btn">Get Started</button>
         </div>
 
-        <video
-          class="section2-video"
-          src="./Assets/product-showcase-HEVC-high-640p.mp4"
-          autoplay
-          muted
-          loop
-          playsinline
-          oncontextmenu="return false"
-        ></video>
-      </div>
-
-      <div class="scroll-navigator">
-        <button onclick="scrollToSection('section3')">
-          <img
-            src="./Assets/down-arrow.svg"
-            alt="Scroll down to next section"
-          />
-        </button>
-
-        <button onclick="scrollToSection('section1')">
-          <img
-            src="./Assets/up-arrow.svg"
-            alt="Scroll up to previous section"
-          />
-        </button>
-      </div>
-    </section>
-
-    <!-- Section 3 -->
-    <section class="section3" id="section3">
-      <div class="section3-container">
-        <h2>How it works?</h2>
-
-        <div class="steps">
-          <div class="step">
-            <img
-              src="./Assets/s3i1.webp"
-              alt="Join Live Auction"
-              class="step-image"
-            />
-            <h3>Join the Live Auction</h3>
-            <p>Participate in our live auctions on Instagram.</p>
-          </div>
-
-          <div class="step">
-            <img
-              src="./Assets/s3i2.webp"
-              alt="Place Your Bids"
-              class="step-image"
-            />
-            <h3>Place Your Bids</h3>
-            <p>Submit your bids in the chat — highest bidder wins.</p>
-          </div>
-
-          <div class="step">
-            <img
-              src="./Assets/s3i3.webp"
-              alt="Secure Your Win"
-              class="step-image"
-            />
-            <h3>Secure Your Win</h3>
-            <p>Complete your payment via QR code sent in your DM.</p>
-          </div>
-
-          <div class="step">
-            <img
-              src="./Assets/s3i4.webp"
-              alt="Won → Shipped"
-              class="step-image"
-            />
-            <h3>Won → Shipped</h3>
-            <p>Your order will be on the move within 48 hours.</p>
-          </div>
-        </div>
-
-        <p class="tagline">No rules. No limits. Just pay what feels good</p>
-      </div>
-
-      <div class="scroll-navigator">
-        <button onclick="scrollToSection('section4')">
-          <img
-            src="./Assets/down-arrow.svg"
-            alt="Scroll down to next section"
-          />
-        </button>
-        <button onclick="scrollToSection('section2')">
-          <img
-            src="./Assets/up-arrow.svg"
-            alt="Scroll up to previous section"
-          />
-        </button>
-      </div>
-    </section>
-
-    <!-- Section 4 -->
-    <section class="section4" id="section4">
-      <div class="section4-container">
+        <!-- Overlay Image -->
         <img
-          src="./Assets/s4-mobile-mockup.webp"
-          alt="Phone Mockup with Cards"
-          class="section4-image"
+          src="./Assets/s1-overlay.webp"
+          alt="overlay image"
+          class="overlay"
         />
+      </section>
 
-        <div class="section4-content">
-          <h1>
-            <span class="bold">Bids in motion</span><br />
-            <span class="bold">Deals in action</span>
-          </h1>
+      <!-- Section 2 -->
+      <section class="section2" id="section2">
+        <div class="section2-container">
+          <div class="section2-content">
+            <h2>
+              <em>Watch deals<br />Go live</em>
+            </h2>
+            <p>Compete in fast-paced auctions<br />starting at ₹10</p>
+            <button class="get-started-btn">Get Started</button>
+          </div>
 
-          <p>
-            Take part in fast-paced auctions, incredible flash sales, live show
-            giveaways, and so much more.<br /><br />
-            <strong>Action Starts Now</strong>
-          </p>
-
-          <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
+          <video
+            class="section2-video"
+            src="./Assets/product-showcase-HEVC-high-640p.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            oncontextmenu="return false"
+          ></video>
         </div>
-      </div>
 
-      <div class="scroll-navigator">
-        <button onclick="scrollToSection('section3')">
+        <div class="scroll-navigator">
+          <button onclick="scrollToSection('section3')">
+            <img
+              src="./Assets/down-arrow.svg"
+              alt="Scroll down to next section"
+            />
+          </button>
+
+          <button onclick="scrollToSection('section1')">
+            <img
+              src="./Assets/up-arrow.svg"
+              alt="Scroll up to previous section"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section3" id="section3">
+        <div class="section3-container">
+          <h2>How it works?</h2>
+
+          <div class="steps">
+            <div class="step">
+              <img
+                src="./Assets/s3i1.webp"
+                alt="Join Live Auction"
+                class="step-image"
+              />
+              <h3>Join the Live Auction</h3>
+              <p>Participate in our live auctions on Instagram.</p>
+            </div>
+
+            <div class="step">
+              <img
+                src="./Assets/s3i2.webp"
+                alt="Place Your Bids"
+                class="step-image"
+              />
+              <h3>Place Your Bids</h3>
+              <p>Submit your bids in the chat — highest bidder wins.</p>
+            </div>
+
+            <div class="step">
+              <img
+                src="./Assets/s3i3.webp"
+                alt="Secure Your Win"
+                class="step-image"
+              />
+              <h3>Secure Your Win</h3>
+              <p>Complete your payment via QR code sent in your DM.</p>
+            </div>
+
+            <div class="step">
+              <img
+                src="./Assets/s3i4.webp"
+                alt="Won → Shipped"
+                class="step-image"
+              />
+              <h3>Won → Shipped</h3>
+              <p>Your order will be on the move within 48 hours.</p>
+            </div>
+          </div>
+
+          <p class="tagline">No rules. No limits. Just pay what feels good</p>
+        </div>
+
+        <div class="scroll-navigator">
+          <button onclick="scrollToSection('section4')">
+            <img
+              src="./Assets/down-arrow.svg"
+              alt="Scroll down to next section"
+            />
+          </button>
+          <button onclick="scrollToSection('section2')">
+            <img
+              src="./Assets/up-arrow.svg"
+              alt="Scroll up to previous section"
+            />
+          </button>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section4" id="section4">
+        <div class="section4-container">
           <img
-            src="./Assets/up-arrow.svg"
-            alt="Scroll up to previous section"
+            src="./Assets/s4-mobile-mockup.webp"
+            alt="Phone Mockup with Cards"
+            class="section4-image"
           />
-        </button>
-      </div>
 
-      <!-- Overlay Image -->
-      <img src="./Assets/s4-overlay.webp" alt="overlay image" class="overlay" />
-    </section>
+          <div class="section4-content">
+            <h1>
+              <span class="bold">Bids in motion</span><br />
+              <span class="bold">Deals in action</span>
+            </h1>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer-content">
-        <img
-          src="./Assets/Logo2.png"
-          alt="bidzy logo"
-          class="footer-company-logo"
-        />
+            <p>
+              Take part in fast-paced auctions, incredible flash sales, live
+              show giveaways, and so much more.<br /><br />
+              <strong>Action Starts Now</strong>
+            </p>
 
-        <div class="footer-contact">
-          <h3>Sign up as a seller</h3>
-          <p>+91-9871340982<br />contact@bidzy.live</p>
-          <br />
-
-          <div class="social-media-icons">
-            <a href="https://wa.me/919871340982" target="_blank">
-              <img src="./Assets/wa-flaticon.png" alt="WhatsApp" />
-            </a>
-
-            <a href="mailto:contact@bidzy.live" target="_blank">
-              <img src="./Assets/mail-flaticon.png" alt="Email" />
-            </a>
-
-            <a href="https://www.instagram.com/bidzy.live" target="_blank">
-              <img src="./Assets/ig-flaticon.png" alt="Instagram" />
-            </a>
+            <img src="./Assets/ig-qr.webp" alt="QR Code" class="qr" />
           </div>
         </div>
-      </div>
 
-      <div class="bottom">&copy; 2025 Bidzy. All rights reserved.</div>
-    </footer>
+        <div class="scroll-navigator">
+          <button onclick="scrollToSection('section3')">
+            <img
+              src="./Assets/up-arrow.svg"
+              alt="Scroll up to previous section"
+            />
+          </button>
+        </div>
+
+        <!-- Overlay Image -->
+        <img
+          src="./Assets/s4-overlay.webp"
+          alt="overlay image"
+          class="overlay"
+        />
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <img
+            src="./Assets/Logo2.png"
+            alt="bidzy logo"
+            class="footer-company-logo"
+          />
+
+          <div class="footer-contact">
+            <h3>Sign up as a seller</h3>
+            <p>+91-9871340982<br />contact@bidzy.live</p>
+            <br />
+
+            <div class="social-media-icons">
+              <a href="https://wa.me/919871340982" target="_blank">
+                <img src="./Assets/wa-flaticon.png" alt="WhatsApp" />
+              </a>
+
+              <a href="mailto:contact@bidzy.live" target="_blank">
+                <img src="./Assets/mail-flaticon.png" alt="Email" />
+              </a>
+
+              <a href="https://www.instagram.com/bidzy.live" target="_blank">
+                <img src="./Assets/ig-flaticon.png" alt="Instagram" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">&copy; 2025 Bidzy. All rights reserved.</div>
+      </footer>
+    </div>
 
     <script>
       function scrollToSection(sectionID) {
