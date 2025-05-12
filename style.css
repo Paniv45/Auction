@@ -19,22 +19,22 @@ body {
   font-family: "Poppins", sans-serif;
   color: #333;
 
-  /* background: radial-gradient(
-    circle at bottom,
-    white 60%,
-    hsl(250, 50%, 80%) 70%,
-    hsl(280, 50%, 80%) 80%,
-    hsl(310, 50%, 80%) 85%,
-    white 95%
-  ); */
-
   background: linear-gradient(
     to top,
-    white,
+    white 10%,
     hsl(250, 50%, 80%),
     hsl(280, 50%, 80%),
     hsl(310, 50%, 80%),
-    white
+    white 90%
+  );
+
+  background: radial-gradient(
+    circle at bottom,
+    white 20%,
+    hsl(250, 50%, 80%) 35%,
+    hsl(280, 50%, 80%) 50%,
+    hsl(310, 50%, 80%) 60%,
+    white 80%
   );
 }
 
@@ -49,6 +49,31 @@ body {
   max-height: 90dvh;
   min-height: 90dvh;
   overflow-y: scroll;
+}
+
+
+
+/* Default Tags */
+h1, h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* HEADER */
@@ -119,36 +144,6 @@ header {
 
 /* SECTION 1 */
 
-/* GLOBAL BUTTONS */
-.get-started-btn {
-  padding: 12px 24px;
-
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-
-  color: white;
-  background-color: #8581a9;
-
-  border-radius: 0.5rem;
-  border: none;
-
-  cursor: pointer;
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #7a6bff;
-  }
-
-  &::before {
-    text-decoration: none;
-  }
-
-  &::after {
-    text-decoration: none;
-  }
-}
-
 .section1-container {
   display: flex;
   justify-content: space-evenly;
@@ -173,15 +168,6 @@ header {
   padding: 2rem 0;
 
   text-align: left;
-
-  & h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-  }
-
-  & p {
-    font-size: 1.2rem;
-  }
 }
 
 .catch-live-btn {
@@ -211,25 +197,43 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
 
-  & h2 {
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+.get-started-btn {
+  padding: 12px 24px;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+  color: white;
+  background-color: #8581a9;
+
+  border-radius: 1em;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #7a6bff;
   }
 
-  & p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
+  &::before {
+    text-decoration: none;
+  }
+
+  &::after {
+    text-decoration: none;
   }
 }
 
 .section2-video {
   width: 100%;
   max-width: 600px;
+
   border-radius: 16px;
   object-fit: cover;
-  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* SECTION 3 */
@@ -244,10 +248,6 @@ header {
   flex-wrap: wrap;
   gap: 1em;
   width: 100%;
-
-  & h2 {
-    font-size: 2rem;
-  }
 }
 
 .steps {
@@ -299,7 +299,7 @@ header {
 .tagline {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #777;
+  color: #333;
 }
 
 /* SECTION 4 */
@@ -314,8 +314,9 @@ header {
 }
 
 .section4-image {
-  max-width: 350px;
-  object-fit: cover;
+  /* max-width: 350px; */
+  height: 70vh;
+  object-fit: contain;
 }
 
 .section4-content {
@@ -324,15 +325,8 @@ header {
   text-align: left;
   gap: 1em;
 
-  & h1 {
-    font-size: 2.2rem;
-    font-weight: bold;
-  }
-
   & p {
-    font-size: 1.05rem;
     color: #333;
-    line-height: 1.6;
     max-width: 40ch;
   }
 }
@@ -431,6 +425,11 @@ footer {
 
 /* Tablet devices */
 @media (max-width: 1080px) and (min-width: 852px) {
+
+    p {
+      font-size: 1rem;
+    }
+
   .hero-image {
     max-width: 440px;
   }
@@ -440,25 +439,6 @@ footer {
     gap: 15px;
   }
 
-  .section1-content {
-    & h1 {
-      font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1rem;
-    }
-  }
-
-  .section2-content {
-    & h2 {
-      font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1rem;
-    }
-  }
 
   .section2-video video {
     max-width: 450px;
@@ -467,17 +447,17 @@ footer {
 
 /* Mobile devices */
 @media (max-width: 852px) {
-  .head {
-    height: 6dvh;
-    min-height: 6dvh;
-    max-height: 6dvh;
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.8rem;
   }
 
-  .content {
-    height: 94dvh;
-    min-height: 94dvh;
-    max-height: 94dvh;
+  p {
+    font-size: 1rem;
   }
+
 
   /* Hides QR */
   .qr {
@@ -490,10 +470,12 @@ footer {
 
   .catch-live-btn {
     padding: 12px 24px;
-    border-radius: 5px;
+    border-radius: 1em;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 
     color: white;
     background-color: hsl(330, 90%, 50%);
@@ -524,6 +506,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
 
   .section2-container {
@@ -540,14 +523,6 @@ footer {
     justify-content: center;
 
     width: 100%;
-
-    & h2 {
-      font-size: 1.8rem;
-    }
-
-    & p {
-      font-size: 1rem;
-    }
   }
 
   .section2-video {
@@ -576,10 +551,6 @@ footer {
 
     & h1 {
       font-size: 2rem;
-    }
-
-    & p {
-      font-size: 1rem;
     }
   }
 
