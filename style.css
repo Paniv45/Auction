@@ -498,9 +498,11 @@ footer {
 
   .hero-image {
     height: 40vh;
-    object-fit: contain;
-    /* width: 50vw; */
   }
+  .section4-image {
+    height: 40vh;
+  }
+
 
   .section1-content {
     justify-content: space-between;
