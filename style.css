@@ -314,7 +314,7 @@ header {
 }
 
 .section4-image {
-  /* max-width: 350px; */
+  max-width: 500px;
   height: 70vh;
   object-fit: contain;
 }
