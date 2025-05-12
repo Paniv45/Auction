@@ -527,10 +527,19 @@ footer {
     width: 100%;
   }
 
-  .section2-video {
-    /* Keeps the video at the top */
+  /* .section2-video {
+    Keeps the video at the top
     order: 1;
-  }
+  } */
+
+  .section2-video {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  order: 1;
+  display: block;
+  padding: 5px;
+}
 
   .steps {
     flex-direction: column;
