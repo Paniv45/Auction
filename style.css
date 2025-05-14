@@ -16,8 +16,7 @@ body {
   min-height: 100dvh;
   max-height: 100dvh;
   overflow: hidden;
-  /* font-family: "Poppins", sans-serif; */
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #333;
 
   background: linear-gradient(
@@ -228,7 +227,6 @@ header {
 
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: bold;
 
   color: white;
   background-color: #8581a9;
@@ -322,8 +320,7 @@ header {
 }
 
 .tagline {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   color: #333;
 }
 
@@ -547,10 +544,23 @@ footer {
     width: 100%;
   }
 
+
+  .section2-video {
+    height: 30vh;
+    object-fit: cover;
+    order: 1;
+  }
+
   .section2-content {
-    /* height: 100%; */
-    flex: 1;
+    height: 80dvh;
+    /* flex: 1; */
     flex-direction: column;
+  }
+
+  .get-started-btn {
+    padding: .7em 1.4em;
+    border-radius: .6em;
+    width: 60%;
   }
 
   .section2-text {
@@ -565,13 +575,6 @@ footer {
     width: 100%;
   }
 
-  .section2-video {
-  /* width: 100vw; */
-  height: 30vh;
-  object-fit: cover;
-  order: 1;
-}
-
   .steps {
     /* flex-direction: column; */
     /* align-items: center; */
@@ -581,6 +584,13 @@ footer {
     /* height: 80%; */
     min-width: 18em;
     /* width: 80%; */
+  }
+
+  .tagline {
+    padding: 1em 0;
+    font-size: 1.6rem;
+    text-align: center;
+    max-width: 18ch;
   }
 
   .section4-container {
