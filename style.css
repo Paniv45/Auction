@@ -16,7 +16,8 @@ body {
   min-height: 100dvh;
   max-height: 100dvh;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: sans-serif;
   color: #333;
 
   background: linear-gradient(
@@ -46,8 +47,6 @@ body {
 
 .content {
   height: 90dvh;
-  max-height: 90dvh;
-  min-height: 90dvh;
   overflow-y: scroll;
 }
 
@@ -96,10 +95,12 @@ header {
   display: flex;
   justify-content: center;
 
-  gap: 10px;
+  align-self: flex-end;
+
+  gap: .625em;
   width: 100%;
 
-  padding: 10px;
+  padding: .625em;
 
   & button {
     width: 3em;
@@ -127,8 +128,7 @@ header {
 }
 
 .qr {
-  filter: contrast(5) brightness(0);
-  width: 9.375em;
+  width: 8vw;
 }
 
 .section {
@@ -138,6 +138,7 @@ header {
 
   justify-content: space-evenly;
   min-height: 100%;
+  width: 100%;
 
   padding: 0 2rem;
 }
@@ -159,19 +160,30 @@ header {
 
 .section1-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
 
   width: 40%;
-  gap: 1em;
-
   padding: 2rem 0;
 
   text-align: left;
 }
 
+
+.s1-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 1.8em;
+
+  height: max-content;
+}
+
+
 .catch-live-btn {
-  font-weight: bold;
+  font-size: 1.2rem;
 
   text-decoration: none;
 
@@ -186,24 +198,35 @@ header {
 .section2-container {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-direction: row;
   flex: 1;
-
+  height: 100%;
   width: 100%;
 }
 
 .section2-content {
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: max-content;
+}
+
+.section2-text {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
+
 .get-started-btn {
-  padding: 12px 24px;
+  padding: .5rem 1.25rem;
 
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 
   color: white;
@@ -229,6 +252,7 @@ header {
 }
 
 .section2-video {
+
   width: 100%;
   max-width: 600px;
 
@@ -261,7 +285,7 @@ header {
 .step {
   width: 20%;
   min-width: max(20%, 15.625em);
-  padding: 1.25em;
+  padding: .8em;
 
   background-color: white;
 
@@ -277,7 +301,7 @@ header {
 
   & img {
     width: 100%;
-    height: 45vh;
+    height: 40vh;
     object-fit: cover;
     border-radius: 1em;
   }
@@ -291,7 +315,7 @@ header {
 
   & p {
     text-align: left;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #555;
   }
 }
@@ -347,13 +371,14 @@ footer {
   .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
     max-width: 1200px;
   }
 
   .footer-company-logo {
     width: 180px;
+    height: fit-content;
+    object-fit: contain;
     filter: invert(1) grayscale(1);
   }
 
@@ -411,7 +436,7 @@ footer {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 18em;
+  width: 14dvw;
 
   /* z-index: 100; */
 }
@@ -496,7 +521,16 @@ footer {
     align-items: center;
   }
 
+  .section1-content {
+    flex: 1;
+  }
+
+  .s1-c {
+    align-items: center;
+  }
+
   .hero-image {
+    margin: 1em;
     height: 40vh;
   }
   .section4-image {
@@ -511,43 +545,38 @@ footer {
     width: 100%;
   }
 
-  .section2-container {
+  .section2-content {
+    /* height: 100%; */
+    flex: 1;
     flex-direction: column;
   }
 
-  .section2-content {
+  .section2-text {
     /* Moves the text below the video */
     order: 2;
-    padding-top: 20px;
 
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
+    height: 40%;
     width: 100%;
   }
 
-  /* .section2-video {
-    Keeps the video at the top
-    order: 1;
-  } */
-
   .section2-video {
-  width: 100vw;
-  height: 50vh;
+  /* width: 100vw; */
+  height: 30vh;
   object-fit: cover;
   order: 1;
-  display: block;
-  padding: 5px;
 }
 
   .steps {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
   }
 
   .step {
-    height: 80%;
+    /* height: 80%; */
     min-width: 18em;
     /* width: 80%; */
   }
