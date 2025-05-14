@@ -530,7 +530,7 @@ footer {
 
   .hero-image {
     margin: 1em;
-    height: 40vh;
+    height: 45vh;
   }
   .section4-image {
     height: 40vh;
@@ -542,6 +542,10 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
+  }
+
+  .s1-c {
+    gap: 1em;
   }
 
 
