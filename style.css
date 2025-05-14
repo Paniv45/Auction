@@ -141,6 +141,7 @@ header {
   width: 100%;
 
   padding: 0 2rem;
+  margin-bottom: 3.2em;
 }
 
 /* SECTION 1 */
@@ -491,6 +492,7 @@ footer {
 
   .qr-viz {
     display: block;
+    width: 30vw
   }
 
   .catch-live-btn {
