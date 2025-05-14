@@ -165,7 +165,6 @@ header {
 
   width: 40%;
   padding: 2rem 0;
-
   text-align: left;
 }
 
@@ -324,6 +323,10 @@ header {
   color: #333;
 }
 
+.jump-btn {
+display: none;
+}
+
 /* SECTION 4 */
 
 .section4-container {
@@ -471,10 +474,11 @@ footer {
 /* Mobile devices */
 @media (max-width: 852px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.1;
   }
   h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   p {
@@ -538,7 +542,8 @@ footer {
 
 
   .section1-content {
-    justify-content: space-between;
+    gap: 2em;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -567,6 +572,40 @@ footer {
     width: 60%;
   }
 
+  .jump-btn {
+    display: block;
+    width: 65%;
+    padding: .5em 1.4em;
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: .6em;
+
+    color: white;
+    background-color: #8581a9;
+
+    border: none;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    text-align: center;
+
+    margin: 1em 0;
+
+    &:hover {
+      background-color: #7a6bff;
+    }
+
+    &::before {
+      text-decoration: none;
+    }
+
+    &::after {
+      text-decoration: none;
+    }
+  }
+
   .section2-text {
     /* Moves the text below the video */
     order: 2;
@@ -591,7 +630,7 @@ footer {
   }
 
   .tagline {
-    padding: 1em 0;
+    margin-top: 1em;
     font-size: 1.6rem;
     text-align: center;
     max-width: 18ch;
