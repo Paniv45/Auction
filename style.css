@@ -19,15 +19,6 @@ body {
   font-family: "Poppins", sans-serif;
   color: #333;
 
-  background: linear-gradient(
-    to top,
-    white 10%,
-    hsl(250, 50%, 80%),
-    hsl(280, 50%, 80%),
-    hsl(310, 50%, 80%),
-    white 90%
-  );
-
   background: radial-gradient(
     circle at bottom,
     white 20%,
@@ -37,19 +28,6 @@ body {
     white 80%
   );
 }
-
-.head {
-  height: 10dvh;
-  max-height: 10dvh;
-  min-height: 10dvh;
-}
-
-.content {
-  height: 90dvh;
-  overflow-y: scroll;
-}
-
-
 
 /* Default Tags */
 h1, h2 {
@@ -74,20 +52,29 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-/* HEADER */
-header {
+
+.head {
+  height: 10dvh;
+  max-height: 10dvh;
+  min-height: 10dvh;
+}
+
+.section {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
 
+  justify-content: space-evenly;
+  min-height: 100%;
   width: 100%;
-  height: 100%;
 
-  & img {
-    height: 100%;
-  }
+  padding: 0 2rem;
+  margin-bottom: 3.2em;
+}
+
+.content {
+  height: 90dvh;
+  overflow-y: scroll;
 }
 
 .scroll-navigator {
@@ -130,20 +117,21 @@ header {
   width: 8vw;
 }
 
-.section {
-  position: relative;
+
+/* HEADER */
+header {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-  justify-content: space-evenly;
-  min-height: 100%;
   width: 100%;
+  height: 100%;
 
-  padding: 0 2rem;
-  margin-bottom: 3.2em;
-}
-.section4 {
-  margin-bottom: 0;
+  & img {
+    height: 100%;
+  }
 }
 
 /* SECTION 1 */
@@ -318,7 +306,6 @@ header {
 
   & p {
     text-align: left;
-    font-size: 0.85rem;
     color: #555;
   }
 }
@@ -333,6 +320,9 @@ display: none;
 }
 
 /* SECTION 4 */
+.section4 {
+  margin-bottom: 0;
+}
 
 .section4-container {
   display: flex;
@@ -450,6 +440,18 @@ footer {
 
 /* Mobile devices */
 @media (max-width: 1080px) {
+
+  body {
+  background: radial-gradient(
+    circle at bottom,
+    white 10%,
+    hsl(250, 50%, 80%) 45%,
+    hsl(280, 50%, 80%) 60%,
+    hsl(310, 50%, 80%) 70%,
+    white 100%
+  );
+  }
+
   h1 {
     font-size: 1.8rem;
     line-height: 1.1;
@@ -501,7 +503,6 @@ footer {
   .section1-container {
     width: 100%;
     height: 100%;
-    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -517,10 +518,6 @@ footer {
     margin: 1em;
     height: 45vh;
   }
-  .section4-image {
-    height: 40vh;
-  }
-
 
   .section1-content {
     gap: 2em;
@@ -601,7 +598,6 @@ footer {
     width: 100%;
   }
 
-
   .step {
     /* height: 80%; */
     min-width: 18em;
@@ -626,6 +622,10 @@ footer {
     & h1 {
       font-size: 2rem;
     }
+  }
+
+  .section4-image {
+    height: 40vh;
   }
 
   .footer {
