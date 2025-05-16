@@ -21,7 +21,7 @@ body {
 
   background: radial-gradient(
     circle at bottom,
-    white ,
+    white,
     hsl(250, 50%, 80%) 35%,
     hsl(280, 50%, 80%) 50%,
     hsl(310, 50%, 80%) 60%,
@@ -30,7 +30,8 @@ body {
 }
 
 /* Default Tags */
-h1, h2 {
+h1,
+h2 {
   font-style: italic;
   font-weight: bold;
 }
@@ -47,16 +48,14 @@ p {
   font-size: 1.2rem;
 }
 
-
 .shadow {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 }
 
 .img-shadow {
-  filter: drop-shadow(0px 4px 4px hsla(240, 100%, 3%, .8));
-  -webkit-filter: drop-shadow(0px 4px 4px hsla(240, 100%, 3%, .8));
+  filter: drop-shadow(0px 4px 4px hsla(240, 100%, 3%, 0.8));
+  -webkit-filter: drop-shadow(0px 4px 4px hsla(240, 100%, 3%, 0.8));
 }
-
 
 .head {
   height: 10dvh;
@@ -88,10 +87,10 @@ p {
 
   align-self: flex-end;
 
-  gap: .625em;
+  gap: 0.625em;
   width: 100%;
 
-  padding: .625em;
+  padding: 0.625em;
 
   & button {
     width: 3em;
@@ -121,7 +120,6 @@ p {
 .qr {
   width: 8vw;
 }
-
 
 /* HEADER */
 header {
@@ -164,7 +162,6 @@ header {
   text-align: left;
 }
 
-
 .s1-c {
   display: flex;
   flex-direction: column;
@@ -177,7 +174,6 @@ header {
 
   height: max-content;
 }
-
 
 .catch-live-btn {
   font-size: 1.2rem;
@@ -218,9 +214,8 @@ header {
   align-items: flex-start;
 }
 
-
 .get-started-btn {
-  padding: .5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
 
   text-decoration: none;
   font-size: 1.2rem;
@@ -248,7 +243,6 @@ header {
 }
 
 .section2-video {
-
   width: 100%;
   max-width: 600px;
 
@@ -281,7 +275,7 @@ header {
 .step {
   width: 20%;
   min-width: max(20%, 15.625em);
-  padding: .8em;
+  padding: 0.8em;
 
   background-color: white;
 
@@ -321,7 +315,7 @@ header {
 }
 
 .jump-btn {
-display: none;
+  display: none;
 }
 
 /* SECTION 4 */
@@ -369,22 +363,23 @@ footer {
   background-color: #2b2b2b;
   color: white;
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  max-width: 1200px;
-  flex-wrap: wrap; /* Ensures mobile/small screens behave better */
-  gap: 20px; /* Optional: adds space between logo and contact */
-}
+  .footer-content {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: start !important;
 
-.footer-company-logo {
-  width: 180px;
-    height: fit-content;
-    object-fit: contain;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Ensures mobile/small screens behave better */
+    gap: 20px; /* Optional: adds space between logo and contact */
+  }
+
+  .footer-company-logo {
+    width: 180px;
+    /* height: fit-content; */
+    /* object-fit: contain; */
     filter: invert(1) grayscale(1);
-}
+  }
 
   .footer-contact {
     display: flex;
@@ -445,19 +440,17 @@ footer {
   /* z-index: 100; */
 }
 
-
 /* Mobile devices */
 @media (max-width: 1080px) {
-
   body {
-  background: radial-gradient(
-    circle at bottom,
-    white 10%,
-    hsl(250, 50%, 80%) 45%,
-    hsl(280, 50%, 80%) 60%,
-    hsl(310, 50%, 80%) 70%,
-    white 100%
-  );
+    background: radial-gradient(
+      circle at bottom,
+      white 10%,
+      hsl(250, 50%, 80%) 45%,
+      hsl(280, 50%, 80%) 60%,
+      hsl(310, 50%, 80%) 70%,
+      white 100%
+    );
   }
 
   h1 {
@@ -477,7 +470,7 @@ footer {
   }
 
   /* Buttons */
-    .catch-live-btn {
+  .catch-live-btn {
     padding: 12px 24px;
     border-radius: 1em;
     border: none;
@@ -497,7 +490,6 @@ footer {
     }
   }
 
-
   /* Hides QR */
   .qr {
     display: none;
@@ -505,7 +497,7 @@ footer {
 
   .qr-viz {
     display: block;
-    width: 30vw
+    width: 30vw;
   }
 
   .section1-container {
@@ -541,7 +533,6 @@ footer {
     gap: 1em;
   }
 
-
   .section2-video {
     height: 30vh;
     /* width: 100%; */
@@ -556,19 +547,19 @@ footer {
   }
 
   .get-started-btn {
-    padding: .7em 1.4em;
-    border-radius: .6em;
+    padding: 0.7em 1.4em;
+    border-radius: 0.6em;
     width: 65%;
   }
 
   .jump-btn {
     display: block;
     width: 65%;
-    padding: .5em 1.4em;
+    padding: 0.5em 1.4em;
 
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: .6em;
+    border-radius: 0.6em;
 
     color: white;
     background-color: #8581a9;
