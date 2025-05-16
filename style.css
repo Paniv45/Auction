@@ -369,20 +369,22 @@ footer {
   background-color: #2b2b2b;
   color: white;
 
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px;
-  }
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  flex-wrap: wrap; /* Ensures mobile/small screens behave better */
+  gap: 20px; /* Optional: adds space between logo and contact */
+}
 
-  .footer-company-logo {
-    width: 180px;
+.footer-company-logo {
+  width: 180px;
     height: fit-content;
     object-fit: contain;
     filter: invert(1) grayscale(1);
-  }
+}
 
   .footer-contact {
     display: flex;
